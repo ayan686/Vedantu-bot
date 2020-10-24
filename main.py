@@ -131,7 +131,7 @@ class Bot(discord.Client):
         self.embed.add_field(name="**__ANSWER 2  __**", value="~~0.0~~", inline=False)
         self.embed.add_field(name="**__ANSWER 3  __**", value="~~0.0~~", inline=False)
       #  self.embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/715492364189302865/740765439411486740/images.jpeg")
-        self.embed.set_footer(text="MADE BY R€FL€X ॥乛Ꮇʀ.ꜱᴜʀʏᴀ#8671") 
+        self.embed.set_footer(text="MADE BY R€FL€X ॥乛Killer#8741") 
         
    
         
@@ -216,9 +216,9 @@ class Bot(discord.Client):
                 await self.update_embeds()
                 self.embed_msg = \
                     await message.channel.send('',embed=self.embed)
-                await self.embed_msg.add_reaction("✅")
+                await self.embed_msg.add_reaction("✔️")
                 #await self.embed_msg.add_reaction("âœ”")
-                await self.embed_msg.add_reaction("💗")
+                await self.embed_msg.add_reaction("🔥")
                 self.embed_channel_id = message.channel.id
             else:
                 await message.channel.send("** You Do Not Have permission To Use This** **cmd!** :stuck_out_tongue_winking_eye:")
@@ -260,7 +260,7 @@ def selfbot_process(update_event, answer_scores):
     selfbot = SelfBot(update_event, answer_scores)
 
     loop = asyncio.get_event_loop()
-    loop.create_task(selfbot.start('NDg1NjM2NTQxMDE2OTY1MTIx.XZZk',
+    loop.create_task(selfbot.start('NzQ4MTU3MDczMTE1ODQwNjI0.X0ZVkg.Ic7p5IHTxSVvNpNz7WapzIi3-HY',
                                    bot=False))
     loop.run_forever()
 
